@@ -14,7 +14,7 @@ class ProductModel extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => ProductDetailsScreen(),
+            builder: (context) => ProductDetailsScreen(proList: products),
           ),
         );
       },
