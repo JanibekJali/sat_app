@@ -33,8 +33,11 @@ class _FullScreenViewState extends State<FullScreenView> {
             child: PageView(
               children: List.generate(widget.imagesList.length, (index) {
                 return InteractiveViewer(
-                    transformationController: TransformationController(),
-                    child: Image.network(widget.imagesList[index].toString()));
+                  transformationController: TransformationController(),
+                  child: Image.network(
+                    widget.imagesList[index].toString(),
+                  ),
+                );
               }),
             ),
           ),

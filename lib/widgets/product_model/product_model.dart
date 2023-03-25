@@ -40,6 +40,7 @@ class ProductModel extends StatelessWidget {
                   child: Image.network(
                     // snapshot.data!.docs[index]['proimages'][0],
                     products['proimages'][0],
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
